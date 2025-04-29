@@ -1,0 +1,8 @@
+# _config.yml for GitHub Pages
+
+title: Project Bridge: Bridging the Gap in Data Fragmentation for AEC with AI-Powered Knowledge Retrieval
+description: AI-powered knowledge retrieval using RAG and multimodal Gen AI.
+
+theme: jekyll-theme-cayman
+
+markdown: kramdown
