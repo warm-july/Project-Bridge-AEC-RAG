@@ -6,11 +6,19 @@ This project originated as part of the **Google Gen AI Intensive Course (March 3
 
 Our focus: addressing the **data fragmentation crisis** in the Architecture, Engineering, and Construction (AEC) industry by building a **smart information retrieval system** tailored to AEC needs.
 
-🔗 [Public Kaggle Notebook (Phase 1)](https://www.kaggle.com/code/junwangzero/google-gen-ai-project-capstone-2025-jw-to)
+🔗 [Public Kaggle Notebook (Phase 1)](https://www.kaggle.com/code/junwangzero/google-gen-ai-project-capstone-2025-jw-to)  
+🔗 [Live GitHub Page](https://warm-july.github.io/Project-Bridge-AEC-RAG/)  
+🎥 [YouTube Video Overview](https://www.youtube.com/watch?v=iwlgeVLrNbU&themeRefresh=1)
 
-🔗 [YouTube Video Overview](https://www.youtube.com/watch?v=iwlgeVLrNbU&themeRefresh=1)
+> _Acknowledgement: Google's Gemini 2.5 Pro model provided valuable assistance in drafting and refining this documentation._
 
-*Acknowledgement: Google's Gemini 2.5 Pro model provided valuable assistance in drafting and refining this documentation.*
+---
+
+## Video Overview
+
+[![Watch the video](https://img.youtube.com/vi/iwlgeVLrNbU/maxresdefault.jpg)](https://www.youtube.com/watch?v=iwlgeVLrNbU)
+
+> _Click the image to watch the full project walkthrough on YouTube._
 
 ---
 
@@ -76,7 +84,6 @@ Explore it here:
 
 🔗 [Google Gen AI Project Capstone - Jun Wang (Kaggle Notebook)](https://www.kaggle.com/code/junwangzero/google-gen-ai-project-capstone-2025-jw-to)
 
-
 ---
 
 ## Phase 2: Future Development (Planned)
@@ -116,6 +123,3 @@ This project is currently intended for **educational demonstration purposes only
 ---
 
 > ✨ *By connecting fragmented insights to real-time needs, AI can help AEC professionals design and build better.*
-
-
-[GitHub Page](https://warm-july.github.io/Project-Bridge-AEC-RAG/)
