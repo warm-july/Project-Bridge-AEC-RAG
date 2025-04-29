@@ -1,6 +1,6 @@
 # Project Bridge: A Capstone Project to Address Data Fragmentation in the AEC Industry with AI-Powered Knowledge Retrieval
 
-> [!summary] Project Background
+> [!NOTE] Project Background
 >This Capstone Project stems from the 5-day Gen AI Intensive Course with Google (March 31 - April 4, 2025) hosted on Kaggle. It explores applying core Gen AI capabilities taught in the course—like document/image understanding, Retrieval-Augmented Generation (RAG), structured outputs, and function calling—to tackle a real-world challenge in the Architecture, Engineering, and Construction (AEC) industry: creating a **smart information retrieval system**.
 > 
 > Accompanying this post are a public [Kaggle Notebook](https://www.kaggle.com/code/junwangzero/google-gen-ai-project-capstone-2025-jw-to) detailing the implementation and a [YouTube video](https://www.google.com/url?sa=E&q=link-to-video) discussing the project's background, use cases, and future potential.
@@ -19,7 +19,7 @@ With this data fragmentation still an ongoing challenge, what if AI could help c
 
 At its core, this project leverages **Retrieval-Augmented Generation (RAG)**. RAG systems uniquely combine the search power of vector databases with the generative capabilities of **Large Language Models** (LLMs). Instead of relying solely on generic training data, RAG grounds the LLM's responses in specific, relevant content retrieved from your own knowledge base. This dramatically reduces irrelevant or "hallucinated" answers, providing precise, context-aware information.
 
-![[Framework.png]]
+![Framework](static/Framework.png)
 **Figure 1.** RAG System Overview — How a query becomes a data-backed response.
 
 As shown in **Figure 1**, a user’s natural-language query flows through a retriever, which searches a knowledge base for relevant documents. The retrieved content is passed to a large language model, which then generates a response based on actual data — not generic training data or "hallucination".
@@ -30,7 +30,7 @@ Recognizing that AEC knowledge is heavily visual, we extended this concept to *
 
 ## The How (Implementation + Technology)
 
-![[Implementation.png]]
+![Implementation](static/Framework.png)
 **Figure 2.** Proof-of-Concept RAG System Tailored for AEC Knowledge.
 
 This proof-of-concept extends a standard RAG pipeline into a **multimodal, metadata-aware, and structured-response system** tailored for the complexities of the AEC industry. As shown in **Figure 2**, the pipeline moves through four primary stages: **data ingestion**, **embedding**, **retrieval**, and **generation** — all orchestrated via autonomous function calling powered by Gemini.
@@ -53,12 +53,12 @@ The pipeline starts by ingesting content (articles, reports, case studies) from 
 
 
 
-![[Pasted image 20250420021533.png]]
+![Pasted image 20250420021533](static/Pasted%20image%2020250420021533.png)
 **Figure 3.** Example article/image/metadata being processed.
 
 For images, **Gemini Vision** models generate rich descriptions (incorporating alt-text, captions, OCR, and visual details), which are stored alongside source URLs and unique IDs.
 
-![[Pasted image 20250420021928.png]]
+![Pasted image 20250420021928](static/Pasted%20image%2020250420021928.png)
 **Figure 4.** Running a sample image through AI processing function and return its AI-generated description below.
 
 And below is part of the image parsing logic, the function `describe_image_from_url`. It downloads an image from a URL, sends it to a Gemini multimodal model, and uses prompt to ask for a rich, multi-layered visual description.
@@ -125,7 +125,7 @@ def describe_image_from_url(image_url, client, model_name="gemini-2.0-flash"):
 
 ### **2. Semantic Embedding & Dual Vector Storage**
 
-![[Embedding.png]]
+![Embedding](static/Embedding.png)
 **Figure 5.** Flow diagram of the data ingestion and embedding workflow.
 
 As shown in Figure 5, using **Gemini Embedding Models**, processed text and enriched image descriptions are converted into vectors and stored in two separate **ChromaDB** collections (one for text, one for images).
@@ -312,7 +312,7 @@ chat = client.chats.create(
 
 It then calls the appropriate tool (e.g., our custom ChromaDB search functions) as needed by the user's request.
 
-![[Pasted image 20250420023531.png]]
+![Pasted image 20250420023531](static/Pasted%20image%2020250420023531.png)
 **Figure 6.** AI recognizes a natural language request for image search and responded correctly via function calling in the background.
 
 
@@ -405,7 +405,7 @@ def answer_with_sources(query: str, top_k: int, max_distance: float) -> str:
 
 This is then rendered into user-friendly Markdown format, enabling consistent formatting, accurate citations (linking back to original sources), and reliable extraction of information for downstream use.
 
-![[Pasted image 20250420024048.png]]
+![Pasted image 20250420024048](static/Pasted%20image%2020250420024048.png)
 **Figure 7.** AI recognizes a natural language request for general question and responded with retrieved data in a structured way with citations.
 
 Depending on the request, the output could be a natural language answer, retrieved images, a newly generated image, or even a full article drafted based on existing examples, which enables a more natural and human-like conversation user experience.
