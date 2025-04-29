@@ -1,8 +1,4 @@
-# _config.yml for GitHub Pages
-
-title: Project Bridge: Bridging the Gap in Data Fragmentation for AEC with AI-Powered Knowledge Retrieval
-description: AI-powered knowledge retrieval using RAG and multimodal Gen AI.
+title: "Project Bridge: Bridging the Gap in Data Fragmentation for AEC with AI-Powered Knowledge Retrieval"
+description: "AI-powered knowledge management system for the AEC industry using Retrieval-Augmented Generation (RAG). Started as a 2025 capstone project for Google Gen-AI course on Kaggle, focused on bridging data fragmentation in architecture and construction."
 
 theme: jekyll-theme-cayman
-
-markdown: kramdown
