@@ -12,9 +12,15 @@
 
 ---
 
-## 🎥 Video Walkthrough
+## 🎥 Video Summary
 
-[![Watch the video](https://img.youtube.com/vi/iwlgeVLrNbU/maxresdefault.jpg)](https://www.youtube.com/watch?v=iwlgeVLrNbU)
+<div style="position: relative; padding-bottom: 56.25%; height: 0;">
+  <iframe src="https://www.youtube.com/embed/iwlgeVLrNbU" 
+          frameborder="0" 
+          allowfullscreen 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
+</div>
 
 ---
 
