@@ -5,7 +5,7 @@
 > This capstone project stems from the 5-day **Google Gen AI Intensive Course** (March 31 - April 4, 2025) hosted on Kaggle. It explores applying Gen AI capabilities — including document/image understanding, Retrieval-Augmented Generation (RAG), structured outputs, and function calling — to address a real-world challenge in the Architecture, Engineering, and Construction (AEC) industry: creating a **smart information retrieval system**.
 >
 > 🔗 [Public Kaggle Notebook (Phase 1)](https://www.kaggle.com/code/junwangzero/google-gen-ai-project-capstone-2025-jw-to)  
-> 🔗 [Live GitHub Page](https://warm-july.github.io/Project-Bridge-AEC-RAG/)  
+> 🔗 [GitHub Repo](https://github.com/warm-july/Project-Bridge-AEC-RAG)  
 > 🎥 [YouTube Project Overview](https://www.youtube.com/watch?v=iwlgeVLrNbU)
 >
 > _Acknowledgement: Google's Gemini 2.5 Pro model provided valuable assistance in drafting and refining this work._
