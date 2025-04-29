@@ -8,7 +8,7 @@ Our focus: addressing the **data fragmentation crisis** in the Architecture, Eng
 
 🔗 [Public Kaggle Notebook (Phase 1)](https://www.kaggle.com/code/junwangzero/google-gen-ai-project-capstone-2025-jw-to)
 
-🔗 [YouTube Video Overview](https://www.google.com/url?sa=E&q=link-to-video)
+🔗 [YouTube Video Overview](https://www.youtube.com/watch?v=iwlgeVLrNbU&themeRefresh=1)
 
 *Acknowledgement: Google's Gemini 2.5 Pro model provided valuable assistance in drafting and refining this documentation.*
 
