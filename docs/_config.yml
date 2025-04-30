@@ -1,15 +1,12 @@
-title: "Project Bridge: Bridging the Gap in Data Fragmentation for AEC with AI-Powered Knowledge Retrieval"
-description: "AI-powered knowledge management system for the AEC industry using Retrieval-Augmented Generation (RAG). Started as a 2025 capstone project for Google Gen-AI course on Kaggle, focused on bridging data fragmentation in architecture and construction."
+title: >
+  Project Bridge: Bridging the Gap in Data Fragmentation for AEC 
+  with AI-Powered Knowledge Retrieval
+description: >
+  An AI-powered knowledge management system for the AEC industry, 
+  leveraging Retrieval-Augmented Generation (RAG) and agentic workflows. 
+  Originally developed as a 2025 capstone project for the Google Gen-AI course on Kaggle, 
+  the system addresses data fragmentation in multimodal AEC data by delivering interactive, 
+  source-aware insights.
 
 theme: jekyll-theme-cayman
 
-sass:
-  style: compressed
-
-# Use relative path to the new style
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
-      stylesheet: /assets/css/style.css

@@ -1,4 +1,4 @@
-# Project Bridge: Bridging the Gap in Data Fragmentation for AEC with AI-Powered Knowledge Retrieval
+<!-- # Project Bridge: Bridging the Gap in Data Fragmentation for AEC with AI-Powered Knowledge Retrieval -->
 
 > **Project Background**
 > 
@@ -36,7 +36,7 @@ The AEC industry, projected to surpass **$10 trillion by 2030** (Oxford Economic
 
 Despite generating mountains of data — BIM models, RFIs, photos — much of it gets siloed, buried, or lost.
 
-> _What if AI could surface the right knowledge at the right moment, grounded in real project data, for real-time project needs?_
+_What if AI could surface the right knowledge at the right moment, grounded in real project data, for real-time project needs?_
 
 That led us to build a proof-of-concept: a **multimodal Retrieval-Augmented Generation (RAG) system** tailored for the AEC industry.
 
@@ -46,8 +46,10 @@ That led us to build a proof-of-concept: a **multimodal Retrieval-Augmented Gene
 
 At its core, the solution leverages **RAG**: a combination of semantic search and generative AI.
 
-![Framework](static/Framework.png)
-**Figure 1.** How a query flows through a retrieval-augmented generation system.
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="static/Framework.png" alt="RAG System Overview" style="max-width: 100%;">
+  <figcaption><strong>Figure 1.</strong> RAG System Overview — How a query becomes a data-backed response.</figcaption>
+</figure>
 
 Rather than relying solely on pretraining, the LLM dynamically retrieves relevant project-specific content, grounds its responses, and generates targeted answers. Recognizing that AEC knowledge is highly visual, our system supports both text and image retrieval.
 
@@ -62,8 +64,10 @@ And receive grounded, visual-rich answers from their internal knowledge base —
 
 ## How: System Overview
 
-![Implementation](static/Implementation.png)
-**Figure 2.** Multimodal, metadata-aware RAG pipeline tailored for AEC knowledge.
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="static/Implementation.png" alt="Multimodal RAG pipeline" style="max-width: 100%;">
+  <figcaption><strong>Figure 2.</strong> Multimodal, metadata-aware RAG pipeline tailored for AEC knowledge.</figcaption>
+</figure>
 
 | Layer                    | Tools & Technologies                                               | Purpose                                                              |
 | ------------------------ | ----------------------------------------------------------------- | -------------------------------------------------------------------- |
@@ -85,20 +89,26 @@ Content was ingested from real-world sources like the [Gensler Research Library]
 - Diagrams, project photos, and visual collateral
 - Metadata (titles, captions, source URLs)
 
-![Example ingestion](static/Pasted%20image%2020250420021533.png)
-**Figure 3.** Example of structured ingestion and enrichment.
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="static/Pasted%20image%2020250420021533.png" alt="Example article/image/metadata being processed" style="max-width: 100%;">
+  <figcaption><strong>Figure 3.</strong> Example article/image/metadata being processed.</figcaption>
+</figure>
 
 Images underwent AI-powered captioning, OCR, and multi-layered description generation using Gemini Vision models.
 
-![Sample AI image parsing](static/Pasted%20image%2020250420021928.png)
-**Figure 4.** Rich visual descriptions generated automatically.
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="static/Pasted%20image%2020250420021928.png" alt="AI processing function and description" style="max-width: 100%;">
+  <figcaption><strong>Figure 4.</strong> Running a sample image through AI processing function and return its AI-generated description below.</figcaption>
+</figure>
 
 ### 2. Embedding and Dual Vector Storage
 
 Text and enriched visual data were embedded into semantic vectors using Gemini models and stored into two parallel **ChromaDB** collections.
 
-![Embedding Workflow](static/Embedding.png)
-**Figure 5.** Embedding pipeline for scalable multimodal knowledge bases.
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="static/Embedding.png" alt="Embedding pipeline for scalable multimodal knowledge bases" style="max-width: 100%;">
+  <figcaption><strong>Figure 5.</strong> Embedding pipeline for scalable multimodal knowledge bases.</figcaption>
+</figure>
 
 This structure enables either text-first, image-first, or hybrid retrieval depending on the query.
 
@@ -111,8 +121,10 @@ Using Gemini's **function calling**, natural language queries are routed automat
 - Summarizing with sources
 - Generating new images or articles
 
-![Function call demo](static/Pasted%20image%2020250420023531.png)
-**Figure 6.** Gemini recognizes when to trigger search vs. generation.
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="static/Pasted%20image%2020250420023531.png" alt="AI recognizes a natural language request for image search" style="max-width: 100%;">
+  <figcaption><strong>Figure 6.</strong> AI recognizes a natural language request for image search and responded correctly via function calling in the background.</figcaption>
+</figure>
 
 ### 4. Structured Output and Markdown Rendering
 
@@ -122,8 +134,10 @@ Structured JSON outputs ensure:
 - Consistent visual layout
 - Easy extension into custom UIs
 
-![Structured retrieval example](static/Pasted%20image%2020250420024048.png)
-**Figure 7.** Natural language answers rendered with citations and references.
+<figure style="text-align: center; margin: 2em 0;">
+  <img src="static/Pasted%20image%2020250420024048.png" alt="AI recognizes a natural language request for general question" style="max-width: 100%;">
+  <figcaption><strong>Figure 7.</strong> AI recognizes a natural language request for general question and responded with retrieved data in a structured way with citations.</figcaption>
+</figure>
 
 ---
 

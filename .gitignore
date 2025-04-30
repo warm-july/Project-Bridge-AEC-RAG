@@ -1,2 +1,8 @@
 # Ignore macOS system files
 .DS_Store
+# Jekyll/Ruby build artifacts
+_site/
+.sass-cache/
+.jekyll-cache/
+.bundle/
+vendor/

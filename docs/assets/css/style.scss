@@ -1,23 +1,25 @@
 ---
 ---
+
 /* Custom overrides */
 $section-headings-color: #222;
 $header-heading-color: #ffffff;
-$header-bg-color: #2a2a35;
-$header-bg-color-secondary: #3c3c4d;
-$body-link-color: #ec407a;
+$header-bg-color: #ff924f;
+$header-bg-color-secondary: #ff4b90;
+$body-link-color: #ff4b6c;
 
 @import "{{ site.theme }}";
 /* Custom styles for the Project Bridge documentation site */
 
 /* This applies after the theme is loaded */
-body {
-  background-color: #f8f9fa;
-}
+
+// body {
+//   background-color: #f8f9fa;
+// }
 
 h1, h2, h3 {
-  color: #222;
+  font-weight: bold !important;
 }
-a:hover {
-    color: #d81b60;
-  }
+// a:hover {
+//     color: #FE006B;
+//   }
