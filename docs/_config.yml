@@ -10,6 +10,9 @@ description: >
 
 theme: jekyll-theme-cayman
 
+plugins:
+  - jekyll-last-modified-at
+
 sass:
   sass_dir: assets/css
 

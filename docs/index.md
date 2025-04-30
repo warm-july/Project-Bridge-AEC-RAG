@@ -1,7 +1,6 @@
 <!-- # Project Bridge: Bridging the Gap in Data Fragmentation for AEC with AI-Powered Knowledge Retrieval -->
 
->**Version Note**
->_Last updated: April 29, 2025_
+>_Last updated: {{ page.last_modified_at | date: "%B %-d, %Y" }}_
 >
 > **Project Background**
 > 
