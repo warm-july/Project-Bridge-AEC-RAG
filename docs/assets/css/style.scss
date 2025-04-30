@@ -12,7 +12,9 @@ $body-link-color: #ff4b6c;
 /* Custom styles for the Project Bridge documentation site */
 
 /* This applies after the theme is loaded */
-
+.page-header::before {
+    display: none !important;
+  }
 
 h1, h2, h3 {
   font-weight: bold !important;
