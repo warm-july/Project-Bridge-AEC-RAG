@@ -1,8 +1,8 @@
 <!-- # Project Bridge: Bridging the Gap in Data Fragmentation for AEC with AI-Powered Knowledge Retrieval -->
 
->_Last updated: {{ page.last_modified_at | date: "%B %-d, %Y" }}_
+>_Last updated: 2025-04-30_
 >
-> **Project Background**
+> **Project Background** 
 > 
 > This capstone project stems from the 5-day **Google Gen AI Intensive Course** (March 31 - April 4, 2025) hosted on Kaggle. It explores applying Gen AI capabilities — including document/image understanding, Retrieval-Augmented Generation (RAG), structured outputs, and function calling — to address a real-world challenge in the Architecture, Engineering, and Construction (AEC) industry: creating a **smart information retrieval system**.
 >
